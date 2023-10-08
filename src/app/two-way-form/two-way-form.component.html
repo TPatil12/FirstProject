@@ -1,0 +1,38 @@
+<p>two-way-form works!</p>
+
+
+<div>
+    <h1>Two Way Binding -Form</h1>
+    <table>
+    <tr>
+        <td><label>Name</label></td>
+        <td><input type="text" [(ngModel)]="name" placeholder="Name..."></td>
+    </tr><br><br>
+    <tr>
+        <td><label>E-Mail</label></td>
+        <td><input type="email" [(ngModel)]="email" placeholder="E-Mail"></td>
+    </tr><br><br>
+    <tr>
+        <td><label>Mobile No</label></td>
+        <td><input type="tel" [(ngModel)]="mono" placeholder="Mobile No."></td>
+    </tr><br><br>
+    <tr>
+        <td><label>City</label></td>
+        <td><input type="text" [(ngModel)]="city" placeholder="City"></td>
+    </tr><br><br><br>
+    
+    <!-- <td><br><button (click)="submit()">SUBMIT</button><br><br></td><br><br> -->
+    </table>
+    </div><br>
+    
+    <div><br>
+    Name       -  {{name}}
+    <br><br>
+    E-Mail     -  {{email}}
+    <br><br>
+    Mobile No. -  {{mono}}
+    <br><br>
+    City       -  {{city}}
+    <br><br>
+    </div>
+    

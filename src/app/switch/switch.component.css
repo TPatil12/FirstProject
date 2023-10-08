@@ -1,0 +1,26 @@
+/* 
+div{
+    text-align: center;
+    margin-top: 100px;
+    background-color: aqua;
+}
+label{
+    font-size: xx-large;
+}
+button{
+    background-color: red;
+}
+input{
+    margin-right: 10px;
+} */
+
+
+
+
+
+div{
+    padding: 20px;
+}
+label{
+    text-align: center;
+}

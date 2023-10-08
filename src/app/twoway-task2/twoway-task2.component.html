@@ -1,0 +1,111 @@
+<!--..................... CODE.................... -->
+
+
+<div>
+    Name-
+    <input type="text" placeholder="Name" [(ngModel)]="name">
+    <br><br>
+    Age-
+    <input type="number" min="0" max="100" placeholder="age" [(ngModel)]="age">
+    <br><br>
+    Gender-
+    <label *ngFor="let g of genders;">
+        <input type="radio" name="gender" [(ngModel)]="gender" value="{{g}}">{{g}}</label>
+    <br><br>
+    Qulification-
+    <select [(ngModel)]="qualification">
+        <option value="">Select Qualification</option>
+        <option *ngFor="let q of qulifications;" value="{{q}}">{{q}}</option>
+    </select>
+    <br><br>
+    Hobbies-
+    <label *ngFor="let hobby of hobbies;"> <input (change)="hobbyChanged($event)" [checked]="hobby.checked" type="checkbox" value="{{hobby.name}}">{{hobby.name}} </label>
+    <br><br />
+    <input type="file" (change)="fileChoose($event)" accept="image/*"/>
+    <br /><br />
+
+
+    <button (click)="save()">submit</button> <br>
+    <br>
+
+    <div *ngIf="show">
+        Name: {{ name }}<br />
+        Age: {{ age }}<br />
+        Gender: {{ gender }}<br />
+        Qulification: {{ qualification }}<br />
+        Hobbies: {{ myHobbies }}<br />
+        <img style="height: 100px;" src="{{ imagecontent }}" />
+    </div>
+
+</div>
+
+
+<!-- .......................CODE CLOSE....................... -->
+
+
+
+
+
+<!-- <p>Two way binding - Simple Form</p> -->
+    
+    <!-- <br><br>
+    <div><br>
+
+    <label>NAME -</label><input type="text" [(ngModel)]="txtName" placeholder="Name" value="{{name}}"><br><br>
+
+    <label>AGE -</label><input type="number" [(ngModel)]="selectedAge" placeholder="Age" value="{{age}}"><br><br>
+
+    <label>GENDER -</label>
+
+    <span *ngFor="let g of genders"><input type="radio" name="gender" value="{{g}}" [(ngModel)]="selectedGender">{{g}}</span>
+
+    <br><br>
+
+    <label>QUALIFICATION -</label>
+    <select [(ngModel)]="selectedQualification">
+        <option *ngFor="let qualification of qualifications;" value="{{qualification}}" >{{qualification}}</option>
+    </select>
+    <br><br>
+
+    
+    <label>HOBBIES</label>
+    <section *ngFor="let hobbie1 of hobbies">
+        <input type="checkbox"  [(ngModel)]="selectedHobbies1" value="{{hobbie1}}">{{hobbie1}} 
+    </section>
+    <section *ngFor="let hobbie2 of hobbies">
+        <input type="checkbox"  [(ngModel)]="selectedHobbies2" value="{{hobbie2}}">{{hobbie2}} 
+    </section>
+    <section *ngFor="let hobbie3 of hobbies">
+        <input type="checkbox"  [(ngModel)]="selectedHobbies2" value="{{hobbie3}}">{{hobbie3}} 
+    </section>
+    <section *ngFor="let hobbie4 of hobbies">
+        <input type="checkbox"  [(ngModel)]="selectedHobbies2" value="{{hobbie4}}">{{hobbie4}} 
+    </section>
+    <br><br>
+
+
+
+    <label>Photo --</label>
+    <label for="">Upload Your Photo Here...</label>
+    <input type="file">
+
+    <br><br>
+
+    <button (click)="submit()">SUBMIT</button><br><br>
+
+    </div><br><br>
+
+    <div><br>
+        NAME - {{name}}
+        <br><br>
+        AGE - {{age}}
+        <br><br>
+        GENDER - {{Gender}}
+        <br><br>  
+        QUALIFICATION - {{qualification}} 
+        <br><br>
+        HOBBIES - {{hobbie1}}
+        <br><br>
+
+    </div>
+    -->

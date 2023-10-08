@@ -1,0 +1,30 @@
+<!-- .............................. Task1 Start @Input And @Ouput ........................................ -->
+
+
+<!-- <hr>
+Name recieved from Parent To Child : {{ name }}
+<hr>
+
+Message From Child To Parent  : 
+<input type="text" [(ngModel)] = "message" (input)="textChanged()">
+{{message}} -->
+
+
+<!-- .............................. Task2 Start ........................................ -->
+
+<h2>Child Component</h2>
+
+<br>
+
+<div>
+    Name : <input type="text" [(ngModel)]="editedName" value="{{info.name}}"> &nbsp;
+    City : <input type="text" [(ngModel)]="editedCity" value="{{info.city}}"> &nbsp;
+    
+    <button (click)="onUpdate()">UPDATE</button>
+  </div>
+
+
+
+
+
+

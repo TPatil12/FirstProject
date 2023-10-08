@@ -1,0 +1,21 @@
+<!-- <p>onewaybinding-assignment1 works!</p> -->
+
+{{months}}
+
+<br>
+<br>
+
+<select (change)="monthChanged($event)">
+    <option *ngFor="let month of months;" value="{{month}}">{{month}}</option>
+</select>
+
+
+
+<hr><hr><hr>
+
+
+Enter Name <br><br>
+<input type="text" value="{{name}}" (input)="textInput($event)"><br><br> 
+<button (click)="clicked()">Click</button>
+
+{{name}}

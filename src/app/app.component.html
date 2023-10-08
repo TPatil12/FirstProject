@@ -1,0 +1,71 @@
+<!-- <style>
+  h1{
+    color: red;
+  }
+</style> -->
+<!-- <h1>Welcome To {{name}}</h1> -->
+
+<!-- <app-home></app-home> -->
+<!-- <app-about></app-about>
+<app-services></app-services>
+<app-header></app-header> -->
+<!-- 
+<br><br>
+
+<app-one-way-form></app-one-way-form> -->
+
+<!-- <app-onewaybinding-assignment1></app-onewaybinding-assignment1> -->
+
+
+<!-- <app-twowaybinding-assignment></app-twowaybinding-assignment> -->
+
+<!-- <app-two-way-form></app-two-way-form> -->
+
+<!-- <app-twoway-task2></app-twoway-task2> -->
+
+<!-- <app-switch></app-switch> -->
+
+<!-- ........................................................ -->
+
+<!-- <app-pipe></app-pipe>
+
+<hr>
+
+<p>Square is : {{ 5 | square }}</p>
+
+<hr> -->
+
+<!-- ............................ Task1 Start @Input And @Ouput .................................. -->
+
+
+<!-- 
+<h2>@Input And @Ouput Study</h2>
+
+<input type="text" [(ngModel)]="name">
+
+<app-child [name]="name" (messageChanged)="recievedMessage($event)"></app-child>
+
+<hr>
+
+Message Recieved From Child To Parent : {{ message }} -->
+ 
+
+<!-- ............................. Task2 Start .................................. -->
+<div>
+<br>
+<h1>@Input And @Ouput</h1><hr><br>
+<h2>Parent Component</h2>
+
+<br>
+NAME : <input type="text" [(ngModel)]="myName" value="{{data.name}}" > &nbsp;
+CITY : <input type="text" [(ngModel)]="myCity" value="{{data.city}}"> &nbsp;
+
+<button (click)="onSubmit()">SUBMIT</button>
+
+
+<br><br><hr>
+
+<app-child [info]="data" (edited)="onUpdated($event)"></app-child>
+
+<br><br>
+</div>

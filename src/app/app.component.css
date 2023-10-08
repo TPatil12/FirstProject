@@ -1,0 +1,21 @@
+/* h1{
+    color: red ;
+    text-align: center;
+} */
+
+
+
+div{
+    text-align: center;
+    background-color: cornflowerblue;
+    color: darkred;
+    font-family: cursive;
+}
+button{
+    background-color: red;
+    color: aliceblue;
+}
+
+h1{
+    color: mediumvioletred;
+}

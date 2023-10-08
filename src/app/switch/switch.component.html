@@ -1,0 +1,95 @@
+<!-- <p>switch works!</p> -->
+
+<!-- ................WITHOUT BUTTON.................. -->
+
+<!--<input type="text" [(ngModel)]="day">
+
+<div [ngSwitch]="day">
+    <p *ngSwitchCase="'monday'">Monday</p>
+    <p *ngSwitchCase="'tuesday'">Tuesday</p>
+    <p *ngSwitchCase="'wednesday'">Wednesday</p>
+    <p *ngSwitchCase="'thursday'">Thursday</p>
+    <p *ngSwitchCase="'friday'">Friday</p>
+    <p *ngSwitchCase="'saturday'">Saturday</p>
+    <p *ngSwitchCase="'sunday'">Sunday</p>
+    <p *ngSwitchDefault>Not Found</p>
+</div> -->
+
+
+
+<!-- ....................WITH BUTTON...................... -->
+
+
+<!--<input type="text" [(ngModel)]="day">
+
+ <button (click)="showDay()">Show</button>
+
+<div [ngSwitch]="selectedDay">
+    <p *ngSwitchCase="1">Monday</p>
+    <p *ngSwitchCase="2">Tuesday</p>
+    <p *ngSwitchCase="3">Wednesday</p>
+    <p *ngSwitchCase="4">Thursday</p>
+    <p *ngSwitchCase="5">Friday</p>
+    <p *ngSwitchCase="6">Saturday</p>
+    <p *ngSwitchCase="7">Sunday</p>
+    <p *ngSwitchDefault>Not Found</p>
+</div> -->
+
+
+
+<!-- ................Name And City Type1 ............... -->
+
+<!-- <div><br><br>
+<label>Name</label><br><br>
+<input type="text" [(ngModel)] = "name"><br><br>
+<label>City </label><br><br>
+<input type="text" [(ngModel)] = "city">
+
+<br><br>
+
+ <button (click)="add()">Add To List</button>
+
+<span> 
+  <ul *ngFor ="let f of friends">
+    <p><b>Name :</b> {{f.name}}  &nbsp;&nbsp;  <b>City :</b> {{f.city}}</p>
+ </ul>
+</span>
+
+ <br><br>
+</div> -->
+
+
+
+
+
+<!-- ......................Name And City Type2 - Stored In LocalStorage .....................  -->
+
+<div>
+<label >Name :  &nbsp;</label><input type="text" [(ngModel)]="txtName" placeholder="Enter Name...."> &nbsp; &nbsp;
+<label>City : &nbsp; </label><input type="text" [(ngModel)]="txtCity" placeholder="Enter City.....">&nbsp;&nbsp;
+
+
+<button (click)="onSubmitclick()">Submit</button>
+
+<br><br>
+
+
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>SR . NO</th>
+            <th> NAME </th>
+            <th> CITY </th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let u of users; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{u.name}}</td>
+            <td>{{u.city}}</td>
+        </tr>
+    </tbody>
+
+</table>
+</div>
